@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Important Commands
+<code>
+yarn create react-app to-do-list<br/>
+cd to-do-list<br/>
+yarn add @types/react @types/react-dom eslint typescript sass<br/>
+</code>
+
 ## Available Scripts
 
 In the project directory, you can run:
