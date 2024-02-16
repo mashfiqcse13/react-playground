@@ -1,26 +1,30 @@
-import React from "react"
-import Logo from './logo';
-import './App.css';
+import { BrowserRouter, Link, Outlet, Route, Routes } from 'react-router-dom';
+import AboutPage from './Pages/AboutPage';
+import NotFoundPage from './Pages/NotFoundPage';
+import HomePage from './Pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Logo className="App-logo" alt="logo" />
-        <p>
-          Hi ! I am Mashfiq
-        </p>
-        <a
-          className="App-link"
-          href="https://mashfiqnahid.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn More About Me
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+
+      <Routes>
+        <Route path="/" element={<NavWrapper />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
+}
+function NavWrapper() {
+  return <>
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+    </nav>
+    <Outlet />
+  </>
 }
 
 export default App;
