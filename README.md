@@ -1,8 +1,12 @@
-# Getting Started with Create React App
+# React App Playground
+
+My React App Practice Playground. I am practiving different  components and features of react using this project. You can clone or download the repository to your local machine.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Important Commands
+## Important Commands To Start From Scratch
 <code>
 yarn create react-app to-do-list<br/>
 cd to-do-list<br/>
