@@ -13,8 +13,6 @@ code {
   text-align: center;
 }
 nav{
-  margin: 50px auto 0;
-  max-width:  640px;
   display: flex;
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -22,4 +20,8 @@ nav{
     padding: 10px 5px;
     text-decoration: none;
   }
+}
+.wrapper{
+  max-width:  640px;
+  margin: 50px auto 0;
 }
